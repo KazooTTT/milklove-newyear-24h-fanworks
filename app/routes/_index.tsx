@@ -7,20 +7,22 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <header className="py-24 bg-gradient-to-r from-emerald-600 to-pink-600 relative overflow-hidden">
+      <header className="py-32 bg-gradient-to-r from-emerald-600 to-pink-600 relative overflow-hidden">
         <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-24 relative">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center">
-            <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-              MUV家元旦24H限定食堂
-            </span>
-          </h1>
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => setShowEndType(!showEndType)}
-              className="px-4 py-2 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-colors duration-200 backdrop-blur-sm"
-            >
-              {showEndType ? "隐藏" : "显示"}END标签
-            </button>
+          <div className="space-y-6 text-center">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
+              <span className="inline-block text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+                MUV家元旦24H限定食堂
+              </span>
+            </h1>
+            <div className="animate-in fade-in duration-1000 delay-300">
+              <button
+                onClick={() => setShowEndType(!showEndType)}
+                className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm hover:scale-105 active:scale-95"
+              >
+                {showEndType ? "隐藏" : "显示"}END标签
+              </button>
+            </div>
           </div>
         </div>
       </header>
