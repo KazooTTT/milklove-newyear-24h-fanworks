@@ -23,7 +23,7 @@ export function Card({
     <div className="relative aspect-[3/5] overflow-hidden rounded-lg group">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center transform transition-transform duration-500"
         style={{ backgroundImage: `url(${image})` }}
       />
 
@@ -40,17 +40,15 @@ export function Card({
           <div className="w-8 h-[1px] bg-white mx-auto mt-4" />
         </div>
 
-        <div className={`space-y-1 text-center mb-4`}>
+        <div className={`space-y-1 mb-4`}>
           <p className="text-lg">{name}</p>
           <p className="text-sm text-gray-300">{englishName}</p>
         </div>
 
-        <div
-          className={`flex-1 flex flex-col justify-center space-y-2 text-center`}
-        >
+        <div className={`flex-1 flex flex-col justify-center space-y-2`}>
           {quotes.map((quote, index) => (
             <p key={index} className="text-sm leading-relaxed">
-              "{quote}"
+              “{quote}”
             </p>
           ))}
         </div>

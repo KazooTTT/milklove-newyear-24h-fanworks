@@ -17,7 +17,7 @@ export default function CardGrid() {
       ],
       date: "2021.10.29",
       bgColor: "from-gray-700/80",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "/SomPrae.jpeg",
     },
     {
       title: "恋爱记录",
@@ -26,8 +26,8 @@ export default function CardGrid() {
       englishName: "Som Prae",
       quotes: ["我的伞永远向你倾斜", "我是prae"],
       date: "2022.07.23",
-      bgColor: "from-green-700/80",
-      image: "/placeholder.svg?height=600&width=400",
+      bgColor: "from-green-300/60",
+      image: "/SomPrae.jpeg",
     },
     {
       title: "恋爱记录",
@@ -41,7 +41,7 @@ export default function CardGrid() {
       ],
       date: "2024.03.08",
       bgColor: "from-blue-700/80",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "/SomPrae.jpeg",
     },
     {
       title: "恋爱记录",
@@ -56,7 +56,7 @@ export default function CardGrid() {
       ],
       date: "2024.11.26推介会",
       bgColor: "from-purple-700/80",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "/SomPrae.jpeg",
     },
     {
       title: "恋爱记录",
@@ -66,7 +66,7 @@ export default function CardGrid() {
       quotes: ["你不是说我不是你的菜吗", "只是今晚", "我只想拥你入怀"],
       date: "2024.11.26推介会",
       bgColor: "from-amber-800/80",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "/SomPrae.jpeg",
     },
     {
       title: "恋爱记录",
@@ -80,13 +80,13 @@ export default function CardGrid() {
       ],
       date: "EVERY DAY IN THE FUTURE",
       bgColor: "from-red-900/80",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "/SomPrae.jpeg",
     },
   ];
 
   return (
-    <div className="w-full bg-gray-900 p-4 md:p-8 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 max-w-[1800px] mx-auto">
+    <div className="w-full px-8 sm:px-12 md:px-16 lg:px-24 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 mx-auto">
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}

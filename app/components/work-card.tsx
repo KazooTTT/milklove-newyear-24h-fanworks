@@ -1,23 +1,30 @@
-import { WorkItem } from "~/data";
+import { Badge } from "~/components/ui/badge";
 import {
   Card,
   CardContent,
-  CardHeader,
   CardFooter,
+  CardHeader,
 } from "~/components/ui/card";
-import { Badge } from "~/components/ui/badge";
-import { cn, getEndTypeBadgeConfig } from "~/lib/utils";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "~/components/ui/hover-card";
+import { OtherWorkItem, WorkItem } from "~/data";
+import { cn, getEndTypeBadgeConfig } from "~/lib/utils";
 
-const HoverDropdown = ({ urls }: { urls: string[] }) => {
+const HoverDropdown = ({
+  urls,
+}: {
+  urls: { link: string; name: string }[];
+}) => {
   return (
     <HoverCard openDelay={0} closeDelay={150}>
       <HoverCardTrigger asChild>
-        <button className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center">
+        <button
+          className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center"
+          aria-label="访问直达链接"
+        >
           <i className="fa-solid fa-chevron-down text-lg"></i>
         </button>
       </HoverCardTrigger>
@@ -30,12 +37,12 @@ const HoverDropdown = ({ urls }: { urls: string[] }) => {
           {urls.map((url, urlIndex) => (
             <a
               key={urlIndex}
-              href={url}
+              href={url.link}
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm px-2 py-1.5 hover:bg-gray-100 rounded transition-colors cursor-pointer"
             >
-              直达链接 {urlIndex + 1}
+              {url.name}
             </a>
           ))}
         </div>
@@ -53,9 +60,10 @@ export function WorkCard({
   category,
   weiboUrl,
   directUrl,
-}: WorkItem) {
+  showEndType = true,
+}: WorkItem & { showEndType?: boolean }) {
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
+    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col group">
       <div className="relative h-48 bg-gray-100">
         <a
           href={weiboUrl}
@@ -67,7 +75,7 @@ export function WorkCard({
           <img
             src={coverImage}
             alt={title}
-            className="w-full h-full object-cover object-center transition-transform"
+            className="w-full h-full object-cover object-center"
             loading="lazy"
             width={320}
             height={192}
@@ -75,7 +83,7 @@ export function WorkCard({
             sizes="(max-width: 768px) 100vw, 320px"
           />
         </a>
-        {endType !== null && endType !== undefined && (
+        {showEndType && endType !== null && endType !== undefined && (
           <div className="absolute top-2 right-2">
             <Badge
               variant="secondary"
@@ -91,8 +99,18 @@ export function WorkCard({
       </div>
       <div className="flex flex-col flex-1">
         <CardHeader className="p-5 pb-0">
-          <h3 className="text-lg font-semibold line-clamp-2 text-gray-800 hover:text-pink-600 transition-colors">
-            {title}
+          <h3 className="text-lg font-semibold line-clamp-2 text-gray-800">
+            <a
+              href={weiboUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-block"
+            >
+              <span className="relative">
+                {title}
+                <span className="absolute bottom-[-4px] left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+              </span>
+            </a>
           </h3>
         </CardHeader>
         <CardContent className="p-5 pt-3 flex-1">
@@ -132,7 +150,9 @@ export function WorkCard({
                 <HoverDropdown urls={directUrl} />
               ) : (
                 <a
-                  href={Array.isArray(directUrl) ? directUrl[0] : directUrl}
+                  href={
+                    Array.isArray(directUrl) ? directUrl[0].link : directUrl
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform"
@@ -146,5 +166,27 @@ export function WorkCard({
         </CardFooter>
       </div>
     </Card>
+  );
+}
+
+export function OtherWorkCard({ title, weiboUrl }: OtherWorkItem) {
+  return (
+    <a
+      href={weiboUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block group"
+    >
+      <Card className="overflow-hidden hover:shadow transition-all duration-300 h-full">
+        <CardHeader className="p-4">
+          <h3 className="text-lg font-semibold line-clamp-2 text-gray-800">
+            <span className="relative">
+              {title}
+              <span className="absolute bottom-[-4px] left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+            </span>
+          </h3>
+        </CardHeader>
+      </Card>
+    </a>
   );
 }
