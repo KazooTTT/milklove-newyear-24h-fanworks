@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/cloudflare";
+import type { LinksFunction, MetaFunction } from "@remix-run/cloudflare";
 import {
   Links,
   LiveReload,
@@ -9,6 +9,23 @@ import {
 } from "@remix-run/react";
 
 import "./tailwind.css";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "MUV家元旦24H限定食堂 - 汇总" },
+    { charset: "utf-8" },
+    { viewport: "width=device-width,initial-scale=1" },
+    {
+      name: "description",
+      content: "本网站汇总了MUV家元旦24H限定食堂的相关信息。",
+    },
+    {
+      name: "keywords",
+      content:
+        "milklove,milk pansa,lovrrukk, 元旦, 限定食堂, 2025, 汇总，同人，美食，体验",
+    },
+  ];
+};
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
