@@ -64,7 +64,6 @@ export default {
   darkMode: ["class"],
   plugins: [
     require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/line-clamp"),
     require("tailwindcss-animate"),
   ],
 } satisfies Config;
