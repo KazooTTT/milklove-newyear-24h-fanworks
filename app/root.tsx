@@ -14,7 +14,10 @@ export const meta: MetaFunction = () => {
   return [
     { title: "MUV家元旦24H限定食堂 - 汇总" },
     { charset: "utf-8" },
-    { viewport: "width=device-width,initial-scale=1" },
+    {
+      viewport:
+        "width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no",
+    },
     {
       name: "description",
       content: "本网站汇总了MUV家元旦24H限定食堂的相关信息。",

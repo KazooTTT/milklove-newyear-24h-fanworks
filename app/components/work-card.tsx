@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Badge } from "~/components/ui/badge";
 import {
   Card,
@@ -5,6 +6,11 @@ import {
   CardFooter,
   CardHeader,
 } from "~/components/ui/card";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "~/components/ui/dropdown-menu";
 import {
   HoverCard,
   HoverCardContent,
@@ -22,7 +28,7 @@ const HoverDropdown = ({
     <HoverCard openDelay={0} closeDelay={150}>
       <HoverCardTrigger asChild>
         <button
-          className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center"
+          className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center focus:outline-none select-none"
           aria-label="访问直达链接"
         >
           <i className="fa-solid fa-chevron-down text-lg"></i>
@@ -51,6 +57,63 @@ const HoverDropdown = ({
   );
 };
 
+const ClickDropdown = ({
+  urls,
+}: {
+  urls: { link: string; name: string }[];
+}) => {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <button
+          className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center focus:outline-none select-none"
+          aria-label="访问直达链接"
+        >
+          <i className="fa-solid fa-chevron-down text-lg"></i>
+        </button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className="w-[120px] p-1">
+        {urls.map((url, urlIndex) => (
+          <a
+            key={urlIndex}
+            href={url.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-sm"
+          >
+            {url.name}
+          </a>
+        ))}
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+};
+
+const ResponsiveDropdown = ({
+  urls,
+}: {
+  urls: { link: string; name: string }[];
+}) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  if (isMobile) {
+    return <ClickDropdown urls={urls} />;
+  }
+
+  return <HoverDropdown urls={urls} />;
+};
+
 export function WorkCard({
   title,
   coverImage,
@@ -63,7 +126,12 @@ export function WorkCard({
   showEndType = true,
 }: WorkItem & { showEndType?: boolean }) {
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col group">
+    <Card
+      className={cn(
+        "overflow-hidden transition-all duration-300 flex flex-col group",
+        "md:hover:shadow-xl"
+      )}
+    >
       <div className="relative h-48 bg-gray-100">
         <a
           href={weiboUrl}
@@ -108,7 +176,13 @@ export function WorkCard({
             >
               <span className="relative">
                 {title}
-                <span className="absolute bottom-[-4px] left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+                <span
+                  className={cn(
+                    "absolute bottom-[-4px] left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-pink-500",
+                    "md:origin-left md:transform md:scale-x-0 md:transition-transform md:duration-300 md:group-hover:scale-x-100",
+                    "origin-left transform scale-x-100 transition-transform duration-300"
+                  )}
+                />
               </span>
             </a>
           </h3>
@@ -134,7 +208,7 @@ export function WorkCard({
               {author}
             </span>
           </div>
-          <div className="flex space-x-3 items-center shrink-0">
+          <div className="flex space-x-4 md:space-x-4 space-x-6 items-center shrink-0">
             <a
               href={weiboUrl}
               target="_blank"
@@ -147,7 +221,7 @@ export function WorkCard({
             </a>
             {directUrl &&
               (Array.isArray(directUrl) && directUrl.length > 1 ? (
-                <HoverDropdown urls={directUrl} />
+                <ResponsiveDropdown urls={directUrl} />
               ) : (
                 <a
                   href={
@@ -177,12 +251,23 @@ export function OtherWorkCard({ title, weiboUrl }: OtherWorkItem) {
       rel="noopener noreferrer"
       className="block group"
     >
-      <Card className="overflow-hidden hover:shadow transition-all duration-300 h-full">
+      <Card
+        className={cn(
+          "overflow-hidden transition-all duration-300 h-full",
+          "md:hover:shadow"
+        )}
+      >
         <CardHeader className="p-4">
           <h3 className="text-lg font-semibold line-clamp-2 text-gray-800">
             <span className="relative">
               {title}
-              <span className="absolute bottom-[-4px] left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-pink-500 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+              <span
+                className={cn(
+                  "absolute bottom-[-4px] left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-pink-500",
+                  "md:origin-left md:transform md:scale-x-0 md:transition-transform md:duration-300 md:group-hover:scale-x-100",
+                  "origin-left transform scale-x-100 transition-transform duration-300"
+                )}
+              />
             </span>
           </h3>
         </CardHeader>

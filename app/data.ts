@@ -449,7 +449,6 @@ export const workGroups: WorkGroup[] = [
         description: "冬日暖怀 ​​​",
         weiboUrl: "http://t.cn/A6uXl6jS",
         author: "安安圩",
-        endType: EndType.HE,
         coverImage: "/images/008icsvEgy1hx551qpztlj30n30xsqbb.jpg",
       },
       {
