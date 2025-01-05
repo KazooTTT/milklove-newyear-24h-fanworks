@@ -3,7 +3,6 @@ import { OtherWorkCard, WorkCard } from "~/components/work-card";
 import { otherWorks, workGroups } from "~/data";
 
 export default function App() {
-  console.log([...workGroups, ...otherWorks]);
   const [showEndType, setShowEndType] = useState(true);
 
   return (
