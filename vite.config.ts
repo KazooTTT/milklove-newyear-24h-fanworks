@@ -12,6 +12,9 @@ declare module "@remix-run/cloudflare" {
 }
 
 export default defineConfig({
+  build: {
+    sourcemap: true,
+  },
   plugins: [
     remixCloudflareDevProxy(),
     remix({
