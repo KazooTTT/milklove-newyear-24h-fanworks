@@ -13,10 +13,7 @@ export default function App() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
               <span
                 className="inline-block text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]
-                motion-safe:md:animate-in 
-                motion-safe:md:fade-in 
-                motion-safe:md:slide-in-from-bottom-4 
-                motion-safe:md:duration-700"
+                "
               >
                 MUV家元旦24H限定食堂
               </span>

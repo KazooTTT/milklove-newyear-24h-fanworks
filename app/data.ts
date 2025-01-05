@@ -538,7 +538,7 @@ export const workGroups: WorkGroup[] = [
 ——大概是“一见钟情”被点石成金的故事吧。`,
         endType: EndType.HE,
         coverImage:
-          "https://pictures.kazoottt.top/2025/01/20250106-024c78e600dadaaaca6ea3e7b6759ac6.jpg",
+          "https://pictures.kazoottt.top/2025/01/20250106-361f9c32be93f23f2246af0ed63b8cf8.jpeg",
         directUrl: "https://www.bilibili.com/video/BV1AD6SYWE7h",
       },
       {

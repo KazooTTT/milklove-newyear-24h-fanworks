@@ -8,9 +8,10 @@ const textMdPath = path.join(process.cwd(), "text.md");
 function generateImageMap(): Record<string, string> {
   const content = fs.readFileSync(textMdPath, "utf8");
   const imageMap: Record<string, string> = {};
-  
+
   // 匹配 markdown 图片语法
-  const regex = /!\[(.*?)\]\((https:\/\/pictures\.kazoottt\.top\/.*?\.(?:jpg|jpeg))\)/g;
+  const regex =
+    /!\[(.*?)\]\((https:\/\/pictures\.kazoottt\.top\/.*?\.(?:jpg|jpeg))\)/g;
   let match;
 
   while ((match = regex.exec(content)) !== null) {
