@@ -24,14 +24,21 @@ const HoverDropdown = ({
 }: {
   urls: { link: string; name: string }[];
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <HoverCard openDelay={0} closeDelay={150}>
+    <HoverCard openDelay={0} closeDelay={150} onOpenChange={setIsOpen}>
       <HoverCardTrigger asChild>
         <button
-          className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center focus:outline-none select-none"
+          className="text-blue-500 md:hover:text-blue-600 transform md:hover:scale-110 transition-transform flex items-center focus:outline-none select-none"
           aria-label="访问直达链接"
         >
-          <i className="fa-solid fa-chevron-down text-lg"></i>
+          <i
+            className={cn(
+              "fa-solid fa-chevron-down text-lg transition-transform duration-200",
+              isOpen && "rotate-180"
+            )}
+          ></i>
         </button>
       </HoverCardTrigger>
       <HoverCardContent
@@ -62,15 +69,21 @@ const ClickDropdown = ({
 }: {
   urls: { link: string; name: string }[];
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <DropdownMenu>
+    <DropdownMenu onOpenChange={setIsOpen}>
       <DropdownMenuTrigger asChild>
         <button
-          className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center focus:outline-none select-none"
+          className="text-blue-500 transform transition-transform flex items-center focus:outline-none select-none"
           aria-label="访问直达链接"
-          onTouchStart={() => {}}
         >
-          <i className="fa-solid fa-chevron-down text-lg"></i>
+          <i
+            className={cn(
+              "fa-solid fa-chevron-down text-lg transition-transform duration-200",
+              isOpen && "rotate-180"
+            )}
+          ></i>
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[120px] p-1">
