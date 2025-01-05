@@ -48,7 +48,7 @@ export const workGroups: WorkGroup[] = [
         author: "泥的墙",
         description: "没错  这就是小情侣的日常​​​",
         coverImage:
-          "https://pictures.kazoottt.top/2025/01/20250106-b9253801ed0cc319561f4ce1f988220b.jpg",
+          "https://pictures.kazoottt.top/2025/01/20250106-6f69bbf12b77bd84a3cf7c126c323f70.jpg",
       },
     ],
   },
@@ -225,7 +225,7 @@ export const workGroups: WorkGroup[] = [
 于是对夏天的记忆变成了
 东京夜里的烟花、南意海岸的柠檬、曼谷房间的体温`,
         coverImage:
-          "https://pictures.kazoottt.top/2025/01/20250106-1330cf50eefd237a5b6c3b7d735d7d45.jpg",
+          "https://pictures.kazoottt.top/2025/01/20250106-2e8a58cc84d9c689cba68b08773d4548.jpg",
       },
       {
         category: Category.TEXT,
@@ -565,7 +565,7 @@ export const workGroups: WorkGroup[] = [
         weiboUrl: "http://t.cn/A6uXl6j9",
         author: "榴芒超棒",
         coverImage:
-          "https://pictures.kazoottt.top/2025/01/20250106-d45687768a78204e83bd713f1fcace13.jpg",
+          "https://pictures.kazoottt.top/2025/01/20250106-47a59f410ee85b27cc313728f79bc487.jpg",
       },
     ],
   },
