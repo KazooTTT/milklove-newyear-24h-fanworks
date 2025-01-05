@@ -22,7 +22,7 @@ export const meta: MetaFunction = () => {
     {
       name: "keywords",
       content:
-        "milklove,milk pansa,lovrrukk, 元旦, 限定食堂, 2025, 汇总，同人，美食，体验",
+        "milklove,milk pansa, loverrukk, 元旦, 限定食堂, 2025, 汇总，同人",
     },
   ];
 };
@@ -52,6 +52,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <ScrollRestoration />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "pp7bg64d4t");
+            `,
+          }}
+        />
         <Scripts />
         <LiveReload />
       </body>
