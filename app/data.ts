@@ -361,7 +361,7 @@ export const workGroups: WorkGroup[] = [
         author: "奇妙能力六",
         endType: EndType.HE,
         coverImage:
-          "https://pictures.kazoottt.top/2025/01/20250106-024c78e600dadaaaca6ea3e7b6759ac6.jpg",
+          "https://pictures.kazoottt.top/2025/01/20250106-90f79bc9fc0be1d70c1e7d4e62abc3f7.jpeg",
       },
       {
         category: Category.TEXT,
