@@ -10,12 +10,18 @@ export default function App() {
       <header className="py-32 bg-gradient-to-r from-emerald-600 to-pink-600 relative overflow-hidden">
         <div className="container mx-auto px-8 sm:px-12 md:px-16 lg:px-24 relative">
           <div className="space-y-6 text-center">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
-              <span className="inline-block text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+              <span
+                className="inline-block text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.3)]
+                motion-safe:md:animate-in 
+                motion-safe:md:fade-in 
+                motion-safe:md:slide-in-from-bottom-4 
+                motion-safe:md:duration-700"
+              >
                 MUV家元旦24H限定食堂
               </span>
             </h1>
-            <div className="animate-in fade-in duration-1000 delay-300">
+            <div className="motion-safe:md:animate-in motion-safe:md:fade-in motion-safe:md:duration-1000 motion-safe:md:delay-300">
               <button
                 onClick={() => setShowEndType(!showEndType)}
                 className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm hover:scale-105 active:scale-95"

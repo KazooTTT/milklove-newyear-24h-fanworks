@@ -68,6 +68,7 @@ const ClickDropdown = ({
         <button
           className="text-blue-500 hover:text-blue-600 transform hover:scale-110 transition-transform flex items-center focus:outline-none select-none"
           aria-label="访问直达链接"
+          onTouchStart={() => {}}
         >
           <i className="fa-solid fa-chevron-down text-lg"></i>
         </button>
