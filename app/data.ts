@@ -47,7 +47,8 @@ export const workGroups: WorkGroup[] = [
         weiboUrl: "http://t.cn/A6uiB1dL",
         author: "泥的墙",
         description: "没错  这就是小情侣的日常​​​",
-        coverImage: "/images/008Fl9Pkly1hx4bzywhq9j30zk8j7x6p.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-b9253801ed0cc319561f4ce1f988220b.jpg",
       },
     ],
   },
@@ -67,7 +68,8 @@ export const workGroups: WorkGroup[] = [
         description: "如果ongsa在小时候就遇见sun会怎样？本文就是这样一个故事。",
         author: "阿三今天又磕到了",
         endType: EndType.HE,
-        coverImage: "/images/008yErrbly1hx4jljoc7fj30u00i0dj9.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-0d4617e2671872c6a09180f8ff00937d.jpg",
       },
       {
         category: Category.TEXT,
@@ -82,7 +84,8 @@ export const workGroups: WorkGroup[] = [
         author: "俞青lll",
         endType: EndType.BE,
         description: "风会代替我拥抱你",
-        coverImage: "/images/006UIwoxly1hx4kv7oqldj30u00i0ad2.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-2c9a8b77479bf15d20c53b592fe72f7c.jpg",
       },
       {
         category: Category.TEXT,
@@ -100,7 +103,8 @@ export const workGroups: WorkGroup[] = [
         ],
         author: "星河宓町",
         endType: EndType.HE,
-        coverImage: "/images/006JnRTAly1hx4fw55qn3j30rs0fmtb4.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-17de74e20083ca38a427857a1c061103.jpg",
         description:
           "绽放过的情意，如烟花般绚烂，沉寂着却不曾熄灭，如炙热的地脉游走各处，只需轻风鼓动，便从余烬中挣扎着燃起烈焰。",
       },
@@ -117,7 +121,8 @@ export const workGroups: WorkGroup[] = [
           },
         ],
         endType: EndType.OE,
-        coverImage: "/images/008e4ZeOgy1hx4afnx92jj30wr0igq6c.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-eb83d87c37b3a63686fe1f28be3fe5f5.jpg",
       },
       {
         category: Category.TEXT,
@@ -132,13 +137,15 @@ export const workGroups: WorkGroup[] = [
         author: "优雅的野生阿婆粉",
         description: "花落三朵时到家",
         endType: EndType.HE,
-        coverImage: "/images/7f504281ly1hx4k2b8004j20u00i0jty.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-32920883a38def9021fb983827ab9496.jpg",
       },
       {
         category: Category.TEXT,
         title: "天灾系统",
         weiboUrl: "http://t.cn/A6uiB1dh",
-        coverImage: "/images/006bd1vngy1hx4leii5mij30k00b9jsw.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-da85e5779c793bf0abc10b7a10d2e752.jpg",
         description: `“欢迎来到天灾系统—Disaster”
 *oe`,
         directUrl: [
@@ -154,7 +161,8 @@ export const workGroups: WorkGroup[] = [
         category: Category.TEXT,
         title: "遇见你之前",
         weiboUrl: "http://t.cn/A6uiB1dA",
-        coverImage: "/images/7434641bly1hx4jsbnpslj20rs0fmn0a.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-b901c11b49316beebe9e94b8ca0fa90e.jpg",
         directUrl: [
           {
             link: "https://www.asianfanfics.com/story/view/1614498/n-a",
@@ -181,7 +189,8 @@ export const workGroups: WorkGroup[] = [
         weiboUrl: "http://t.cn/A6u66kii",
         author: "哼哼心想事成",
         endType: EndType.HE,
-        coverImage: "/images/008s7SBfgy1hx504dxetyj30v90hltaw.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-024c78e600dadaaaca6ea3e7b6759ac6.jpg",
         description: "走啊一起去当玛丽苏",
       },
     ],
@@ -202,7 +211,8 @@ export const workGroups: WorkGroup[] = [
           },
         ],
         description: "城南小陌又逢春，只见梅花不见人",
-        coverImage: "/images/0086xrXZgy1hx57cb2ozvj30u00i0tdg.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-e72bec524a36a464e2ec48edfa391483.jpg",
       },
       {
         category: Category.IMAGE,
@@ -214,7 +224,8 @@ export const workGroups: WorkGroup[] = [
 因为这里只有夏天但现在是有你的夏天
 于是对夏天的记忆变成了
 东京夜里的烟花、南意海岸的柠檬、曼谷房间的体温`,
-        coverImage: "/images/0076wlltly1hx4tybh39pj31ww2pgb2b.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-1330cf50eefd237a5b6c3b7d735d7d45.jpg",
       },
       {
         category: Category.TEXT,
@@ -230,7 +241,8 @@ export const workGroups: WorkGroup[] = [
             name: "夸克",
           },
         ],
-        coverImage: "/images/00865nITgy1hx4u9imgwuj319k0pndkg.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-22787478abfadfd0d490c3e73b1301d5.jpg",
       },
       {
         category: Category.TEXT,
@@ -244,7 +256,8 @@ export const workGroups: WorkGroup[] = [
             name: "asianfanfics",
           },
         ],
-        coverImage: "/images/007fAq4Sgy1hx4xkrwa2xj30zo0k3wi0.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-9b788eb83dc927bfe06572f48c831764.jpg",
       },
       {
         category: Category.VIDEO,
@@ -258,7 +271,8 @@ export const workGroups: WorkGroup[] = [
         ],
         weiboUrl: "http://t.cn/A6u647J1",
         author: "雨蜜米泰多辣",
-        coverImage: "/images/008E4omcgy1hx53v6sbsqj30u00i0wkc.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-4ab0d49bf21afe98456526b99b4cd4b8.jpg",
       },
       {
         category: Category.TEXT,
@@ -274,7 +288,8 @@ export const workGroups: WorkGroup[] = [
         description:
           "原来输了比赛也会有奖励，不完美的小孩也可以得到世界的偏爱。",
         endType: EndType.HE,
-        coverImage: "/images/006fMAhOgy1hx4aonvp7sj30u00i0n1c.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-da5b9cf893ccfeda2200950b5e68175b.jpg",
       },
       {
         category: Category.TEXT,
@@ -293,7 +308,8 @@ export const workGroups: WorkGroup[] = [
         author: "默名_04",
         description: " “太激烈的心跳声也是一种告白。”",
         endType: EndType.HE,
-        coverImage: "/images/006cRK8bgy1hx4vjg3a9aj30n00cy3zl.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-579e20b22e4b98b9e63715e24d926621.jpg",
       },
     ],
   },
@@ -313,7 +329,8 @@ export const workGroups: WorkGroup[] = [
         description: "“Dear myself, I don't know you very well either.”",
         author: "小白_Zara",
         endType: EndType.BE,
-        coverImage: "/images/0076jZRwgy1hx4ko440qdj30qo0f0gn1.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-fb97c87f43ce3b46a993746a29649dbb.jpg",
       },
       {
         category: Category.TEXT,
@@ -332,7 +349,8 @@ export const workGroups: WorkGroup[] = [
         author: "陈季OoO",
         description: "“love，我知道你是来爱我的”",
         endType: EndType.OE,
-        coverImage: "/images/006wgdHzgy1hx44h5odv9j30u00hzn0h.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-39bf09b20af81fa502c121ea56709671.jpg",
       },
       {
         category: Category.VIDEO,
@@ -342,7 +360,8 @@ export const workGroups: WorkGroup[] = [
 如果每次循环我都注定会爱上你 那么 循环的始作俑者 到底是谁。 `,
         author: "奇妙能力六",
         endType: EndType.HE,
-        coverImage: "/images/008s7SBfgy1hx504dxetyj30v90hltaw.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-024c78e600dadaaaca6ea3e7b6759ac6.jpg",
       },
       {
         category: Category.TEXT,
@@ -357,7 +376,8 @@ export const workGroups: WorkGroup[] = [
         author: "-知-白-",
         description: "我们没有未来，我们更没有明天",
         endType: EndType.BE,
-        coverImage: "/images/008sMb8ygy1hx54kaxljkj30u00i0dki.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-781f84ebc1b5755fe3962492f2e45cc5.jpg",
       },
       {
         category: Category.TEXT,
@@ -373,7 +393,8 @@ export const workGroups: WorkGroup[] = [
             name: "asianfanfics",
           },
         ],
-        coverImage: "/images/006ayzp5ly1hx54zr8zpcj30wr0ig0v6.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-80b50110a887d6c422a9b95cdf8abaa0.jpg",
       },
       {
         category: Category.TEXT,
@@ -388,7 +409,8 @@ export const workGroups: WorkGroup[] = [
             name: "微博",
           },
         ],
-        coverImage: "/images/0084hcYVly1hx20ty2ckrj30wi0ib0uu.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-129c7f8d8e10dcdad18647a599e8df58.jpg",
       },
     ],
   },
@@ -403,7 +425,8 @@ export const workGroups: WorkGroup[] = [
         author: "北阪有桑-",
         description: "然而人生辽阔，过去的，就让它过去。",
         endType: EndType.BE,
-        coverImage: "/images/0076u4LIgy1hx5fhp5uhtj30u00i0n43.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-1fab8c5fa63e77b36b68955b264fe4a1.jpg",
       },
       {
         category: Category.VIDEO,
@@ -411,7 +434,8 @@ export const workGroups: WorkGroup[] = [
         description: "如果声音有回响，不同时空的你能听见吗",
         weiboUrl: "http://t.cn/A6uXl6jo",
         author: "炸鸡烧烤麻辣烫火锅",
-        coverImage: "/images/00851dLlgy1hx5fb32qsfj30u00gwdjn.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-b6f4494bb5c9ef4fe0d43dd274c9b7e1.jpg",
       },
       {
         category: Category.TEXT,
@@ -426,7 +450,8 @@ export const workGroups: WorkGroup[] = [
         ],
         author: "啪你脸上有蚊子",
         endType: EndType.HE,
-        coverImage: "/images/006d1LUogy1hx5ewr5r8dj30u00i0di2.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-2e3e065f543c55d9b0a0ce7f4f0899e3.jpg",
       },
       {
         category: Category.TEXT,
@@ -435,7 +460,8 @@ export const workGroups: WorkGroup[] = [
         description: `亚洲人传递爱意的含蓄，总是会让人感觉受伤，从心出发100的爱，在到达诉说的时候被削减了一半，传递给对方，在倾听的时候，在理解中又会被削弱一半，爱意从100的温度，骤降为只有0的冬季`,
         author: "一叶轻舟未过",
         endType: EndType.HE,
-        coverImage: "/images/adef80a2gy1hx5ell0a7sj20n00cywfl.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-7046f57d0a0b0397845ef95e2bc22255.jpg",
         directUrl: [
           {
             link: "https://pan.quark.cn/s/87cb934944dd",
@@ -449,7 +475,8 @@ export const workGroups: WorkGroup[] = [
         description: "冬日暖怀 ​​​",
         weiboUrl: "http://t.cn/A6uXl6jS",
         author: "安安圩",
-        coverImage: "/images/008icsvEgy1hx551qpztlj30n30xsqbb.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-5957d89de4a62c00f39be1fe8d0a417f.jpg",
       },
       {
         category: Category.TEXT,
@@ -480,7 +507,8 @@ export const workGroups: WorkGroup[] = [
 
 元旦快乐😗希望大家看这篇文的时候可以感受到温暖🍦还有辛苦所有负责策划、美工、校对、物料、文案、以及各种形式产出的老师们~大家真的准备了很久😺也请大家多多支持所有老师的产出！！`,
         endType: EndType.HE,
-        coverImage: "/images/0085rJdigy1hx5guzjhkpj30k00b9759.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-3aaafa73a847155f65024e0b4996c4da.jpg",
       },
       {
         category: Category.TEXT,
@@ -509,7 +537,8 @@ export const workGroups: WorkGroup[] = [
 时间是关于爱的炼金术。
 ——大概是“一见钟情”被点石成金的故事吧。`,
         endType: EndType.HE,
-        coverImage: "/images/008s7SBfgy1hx504dxetyj30v90hltaw.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-024c78e600dadaaaca6ea3e7b6759ac6.jpg",
         directUrl: "https://www.bilibili.com/video/BV1AD6SYWE7h",
       },
       {
@@ -526,7 +555,8 @@ export const workGroups: WorkGroup[] = [
           "无止境的思念不如陷入无边际的梦游，穿过碎片，窥见往事岁岁年年。",
         author: "鸟宝的专属小1s",
         endType: EndType.OE,
-        coverImage: "/images/c9a0c5d4gy1hx54ahe8krj20u00i0q8y.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-3acc22904cb0a12382aebc2ff48c73a6.jpg",
       },
       {
         category: Category.IMAGE,
@@ -534,7 +564,8 @@ export const workGroups: WorkGroup[] = [
         title: "卧雪",
         weiboUrl: "http://t.cn/A6uXl6j9",
         author: "榴芒超棒",
-        coverImage: "/images/006z1NRsgy1hx5eqjmmyzj316o16ob29.jpg",
+        coverImage:
+          "https://pictures.kazoottt.top/2025/01/20250106-d45687768a78204e83bd713f1fcace13.jpg",
       },
     ],
   },
