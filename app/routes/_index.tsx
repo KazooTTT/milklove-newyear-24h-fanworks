@@ -18,7 +18,7 @@ export default function App() {
                 MUV家元旦24H限定食堂
               </span>
             </h1>
-            <div className="motion-safe:md:animate-in motion-safe:md:fade-in motion-safe:md:duration-1000 motion-safe:md:delay-300">
+            <div className="">
               <button
                 onClick={() => setShowEndType(!showEndType)}
                 className="px-6 py-3 bg-white/20 hover:bg-white/30 text-white rounded-lg transition-all duration-300 backdrop-blur-sm hover:scale-105 active:scale-95"
