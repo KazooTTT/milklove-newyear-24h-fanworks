@@ -24,9 +24,9 @@
 
 END TYPE:
 
-- OE open end
-- HE happy end
-- BE bad end
+- OE: Opening End
+- HE: Happy Ending
+- BE: Bad Ending
 
 ## 参考
 
