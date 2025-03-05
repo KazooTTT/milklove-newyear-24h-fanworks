@@ -1,8 +1,18 @@
-# Welcome to Remix + Cloudflare
+# MUV家元旦24H限定食堂
 
-- 📖 [Remix docs](https://remix.run/docs)
-- 📖 [Remix Cloudflare docs](https://remix.run/guides/vite#cloudflare)
--
+本项目是[MUV家元旦24H限定食堂](https://s.weibo.com/weibo?q=%23muv%E5%AE%B6%E5%85%83%E6%97%A624h%E9%99%90%E5%AE%9A%E9%A3%9F%E5%A0%82%23)的汇总网站，仅用于汇总链接，对应的内容通过链接跳转，不存储内容。非常感谢各位老师的产出。
+
+本项目开源仅供同担参考，欢迎参与维护或提出建议，请勿用于任何商业用途。
+
+---
+
+[访问网站](https://milklovemuv.com/)
+
+点击卡片内的微博图标可以跳转到对应的微博，点击蓝色的外链图标可以直接跳转至查看文章或者视频的平台。
+
+开发本身没有花太多时间，更多的时间是花在了把相关的信息整理为结构化的数据上面（应该有更系统的方法，实现更系统的方法会花费更多时间，虽然以后会受益，但这次想着快速开发就直接人工整理 + 部分 llm 辅助整理了）
+
+![alt text](docs/cover.png)
 
 ## 梳理
 
@@ -11,6 +21,12 @@
 - 文
 - 图
 - 视频
+
+END TYPE:
+
+- OE open end
+- HE happy end
+- BE bad end
 
 ## 参考
 
@@ -73,7 +89,10 @@
 http://t.cn/A6uy0tID
 ```
 
-![docs](docs/cover.png)
+# Welcome to Remix + Cloudflare
+
+- 📖 [Remix docs](https://remix.run/docs)
+- 📖 [Remix Cloudflare docs](https://remix.run/guides/vite#cloudflare)
 
 ## Development
 
